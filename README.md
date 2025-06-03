@@ -35,11 +35,11 @@ cyberpunk_scraper/
 
 ├── templates/
 
-│ └── index.html # Interfaz HTML (estilo cyberpunk)
+│            └── index.html # Interfaz HTML (estilo cyberpunk)
 
 └── static/
 
-└── style.css # Estilos CSS (colores brillantes, neón)
+             └── style.css # Estilos CSS (colores brillantes, neón)
 
 ## Instalación y uso
 
