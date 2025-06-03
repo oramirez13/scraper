@@ -24,21 +24,29 @@ Permite ingresar una URL para:
 
 cyberpunk_scraper/
 │
+
 ├── app.py # Servidor principal Flask
+
 ├── scraper.py # Lógica del análisis web
+
 ├── requirements.txt # Requisitos para ejecutar el proyecto
+
 ├── README.md
+
 ├── templates/
+
 │ └── index.html # Interfaz HTML (estilo cyberpunk)
+
 └── static/
+
 └── style.css # Estilos CSS (colores brillantes, neón)
 
 ## Instalación y uso
 
 ### 1. Clonar o descargar el proyecto
 
-    git clone https://github.com/usuario/cyberpunk_scraper.git
-    cd cyberpunk_scraper
+    git clone https://github.com/usuario/scraper.git
+    cd scraper
 
 2. Crear entorno virtual (opcional pero recomendado)
 
