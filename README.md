@@ -78,6 +78,9 @@ https://httpbin.org
 https://flask.palletsprojects.com
 
 Autor
+
 Nombre: orami
+
 Carrera: Ingeniería en Seguridad Informática
+
 Curso: Programación Avanzada
