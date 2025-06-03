@@ -33,27 +33,43 @@ cyberpunk_scraper/
 └── static/
 └── style.css # Estilos CSS (colores brillantes, neón)
 
-
-## ⚙️ Instalación y uso
+## Instalación y uso
 
 ### 1. Clonar o descargar el proyecto
 
-```bash
-git clone https://github.com/usuario/cyberpunk_scraper.git
-cd cyberpunk_scraper
+    git clone https://github.com/usuario/cyberpunk_scraper.git
+    cd cyberpunk_scraper
 
 2. Crear entorno virtual (opcional pero recomendado)
 
-python -m venv venv
-venv\Scripts\activate  # En Windows
-# o
-source venv/bin/activate  # En Linux/macOS
+   python -m venv venv
+   venv\Scripts\activate  # En Windows
+
+   source venv/bin/activate  # En Linux/macOS
 
 3. Instalar dependencias
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4. Ejecutar el servidor
 
-python app.py
+    python app.py
 
+5. Usar la aplicación
+
+    Abrir el navegador en: http://localhost:5000
+
+    Ingresar una URL (por ejemplo: https://www.python.org)
+
+    Revisar los resultados
+
+## Ejemplo de URLs válidas para pruebas
+
+https://www.python.org
+https://httpbin.org
+https://flask.palletsprojects.com
+
+Autor
+Nombre: orami
+Carrera: Ingeniería en Seguridad Informática
+Curso: Programación Avanzada
