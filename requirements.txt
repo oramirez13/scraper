@@ -1,0 +1,8 @@
+Requirements
+
+
+```txt
+flask
+requests
+mechanize
+beautifulsoup4
