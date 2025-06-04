@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cyberpunk Web Scanner</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="scanner-container">
+      <h1>CYBERPUNK WEB SCANNER</h1>
+      <form method="post">
+        <input
+          type="text"
+          name="url"
+          placeholder="https://ejemplo.com"
+          required
+        />
+        <button type="submit">Escanear</button>
+      </form>
+
+      {% if resultado %}
+      <div class="resultados">
+        <h2>Resultados del escaneo</h2>
+
+        <h3>Títulos H1</h3>
+        <ul>
+          {% for h1 in resultado["titulos_h1"] %}
+          <li>{{ h1 }}</li>
+          {% endfor %}
+        </ul>
+
+        <h3>Correos encontrados</h3>
+        <ul>
+          {% for c in resultado["correos"] %}
+          <li>{{ c }}</li>
+          {% endfor %}
+        </ul>
+
+        <h3>Años encontrados</h3>
+        <ul>
+          {% for a in resultado["anios"] %}
+          <li>{{ a }}</li>
+          {% endfor %}
+        </ul>
+
+        <h3>Enlaces externos</h3>
+        <ul>
+          {% for l in resultado["enlaces_externos"][:10] %}
+          <li>{{ l }}</li>
+          {% endfor %}
+        </ul>
+
+        <h3>Ocurrencias de "Python": {{ resultado["ocurrencias_clave"] }}</h3>
+
+        <h3>Enlaces internos</h3>
+        <ul>
+          {% for l in resultado["enlaces"][:10] %}
+          <li>{{ l }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
