@@ -23,6 +23,13 @@
 
       {% if resultado %}
       <div class="resultados">
+        {# Si el reporte trae un error, mostrarlo y no tocar las demas claves #}
+        {% if resultado["error"] %}
+        <h2>Error</h2>
+        <p class="error">{{ resultado["error"] }}</p>
+
+        {# Si no hay error, mostrar todos los resultados del analisis #}
+        {% else %}
         <h2>Resultados del escaneo</h2>
 
         <h3>Títulos H1</h3>
@@ -57,10 +64,11 @@
 
         <h3>Enlaces internos</h3>
         <ul>
-          {% for l in resultado["enlaces"][:10] %}
+          {% for l in resultado["enlaces_internos"][:10] %}
           <li>{{ l }}</li>
           {% endfor %}
         </ul>
+        {% endif %}
       </div>
       {% endif %}
     </div>

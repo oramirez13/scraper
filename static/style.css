@@ -74,3 +74,9 @@ li {
     margin: 5px 0;
     color: #ffffff;
 }
+
+.error {
+    color: #ff0048;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff0048;
+}

@@ -1,0 +1,6 @@
+# Archivos temporales de Python que no deben subirse al repositorio
+
+__pycache__/
+*.pyc
+.venv/
+venv/
