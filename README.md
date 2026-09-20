@@ -20,6 +20,13 @@ Permite ingresar una URL para:
 * **Mechanize** — Para simular navegación
 * **Expresiones Regulares (`re`)** — Para buscar patrones como correos y años
 
+## Capturas de pantalla
+
+![Interfaz principal](img/Screenshot%202025-06-04%20095720.png)
+![Análisis de resultados](img/Screenshot%202025-06-04%20100823.png)
+![Resultados de extracción](img/Screenshot%202025-06-04%20102851.png)
+![Detalle de resultados](img/Screenshot%202025-06-04%20103031.png)
+
 ## Estructura del proyecto
 
 cyberpunk_scraper/
@@ -37,9 +44,11 @@ cyberpunk_scraper/
 
 │         └── index.html # Interfaz HTML (estilo cyberpunk)
 
-└── static/
+├── static/
 
 |         └── style.css # Estilos CSS (colores brillantes, neón)
+
+└── img/ # Capturas de pantalla
 
 ## Instalación y uso
 
